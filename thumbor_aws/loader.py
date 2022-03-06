@@ -103,4 +103,4 @@ async def load(context, path):
 
 def normalize_url(prefix: str, path: str) -> str:
     """Function to normalize URLs before reaching into S3"""
-    return f"{prefix.rstrip('/')}/{path.lstrip('/')}"
+    return f"{prefix.rstrip('/')}{path.lstrip('/')}"
